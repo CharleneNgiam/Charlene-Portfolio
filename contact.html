@@ -1,34 +1,87 @@
 <!DOCTYPE html>
 <html>
+<!-- heading and links to stylesheet/css -->
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Charlene's portfolio website</title>
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="stylecontact.css"> 
 </head>
 <body>
-<!-- back ground of the whole page -->
+<!-- the whole page -->
 <div class="page"> 
+    <!-- the navigation bar of the page -->
     <nav>
         <br>
+        <!-- My name at the top left side of the page -->
         <h1>Charlene Ngiam</h1>
+        <!-- links to go different pages in the website -->
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="aboutme.html">About me</a></li>
-            <li><a href="">education/skills</a></li>
+            <li><a href="educationskills.html">education/skills</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
 
-<!-- <making the content of the form> -->
-<form>
-    <p> hi i am charlene</p>
+<!-- making the contact me section -->
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<!-- making the form for user to input -->
+<form class="form">
+    <!-- making the heading of the form -->
+    <h2>Contact Me.</h2>
+    <h3>Let's talk, feel free to ask</h3>
+    <!-- making the infomations of the form that needs to be filled to contact me-->
+    <!-- for user's name  -->
+    <label>Name:</label>
+    <input
+    type="text"
+    id="name"
+    placeholder="Enter your name"
+    required 
+    />
+    
+    <!-- for user's email -->
+    <label>Email:</label>
+    <input
+    type="email"
+    id="email"
+    placeholder="Enter your email"
+    required
+    />
+
+    <!-- for user's phone number -->
+    <label>Phone Number:</label>
+    <input
+    type="phone"
+    id="phoneNumber"
+    placeholder="Enter your phone number"
+    required 
+    />
+
+    <!-- for user to type in the message they want -->
+    <label>Message:</label>
+    <textarea
+    placeholder="Enter your message" required ></textarea>
+
+    <!-- for user to submit the form, the submit button -->
+    <button class=submit onclick="myFunction()">Submit</button>
+    
 </form>
-        
+
 
 </div>
 
-
+<!-- linking to javascript file for the popup message after user click the submit button -->
+<script src="script.js"></script>
 
 
 </body>
