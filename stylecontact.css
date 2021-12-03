@@ -4,7 +4,7 @@
     font-family:'Times New Roman', Times, serif;
     box-sizing: border-box;
 }
-
+/* for the style of whole page of the website */
 .page{
     background: #192841;
     min-height: 100vh;
@@ -13,6 +13,7 @@
     position: relative;
 }
 
+/* the style for navigation bar for the page */
 nav{
     display: flex;
     align-items: center;
@@ -35,9 +36,9 @@ nav ul li{
     font-size: 15px;
 }
 
-/* nav ul li a.hover
-nav ul li a.active{ */
-nav ul li a.hover{
+
+nav ul li a.hover
+nav ul li a.active{
     text-decoration: none;
     color: black;
     background: #fff;
@@ -49,10 +50,13 @@ h1{
     color: black;
 }
 
+
+/* the style for form heading */
 h2{
     font-size: 35px;
 }
 
+/* the style for form */
 .form{
     width: 700px;
     color: black;
@@ -100,6 +104,7 @@ label {
 
 /* for mobile screen (contactme page) */
 @media (max-width: 600px) {
+    /* for the style of whole page of the website */
     .page{
         background: #192841;
         min-height: 130vh;
@@ -107,7 +112,7 @@ label {
         color: white;
         position: relative;
     }
-    
+    /* the style for navigation bar of the page */
     nav{
         display: flex;
         align-items: center;
@@ -141,11 +146,13 @@ label {
         font-size: 35px;
         color: black;
     }
-    
+
+    /* the style for form heading  */
     h2{
         font-size: 35px;
     }
 
+    /* the style for the form */
     .form{
         width: 300px;
         color: black;
