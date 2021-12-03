@@ -4,7 +4,7 @@
     font-family:'Times New Roman', Times, serif;
     box-sizing: border-box;
 }
-
+/* for the style of whole page of the website */
 .page{
     background: #192841;
     min-height: 100vh;
@@ -13,6 +13,7 @@
     position: relative;
 }
 
+/* the style for navigation bar */
 nav{
     display: flex;
     align-items: center;
@@ -47,12 +48,14 @@ h1{
     color: black;
 }
 
+/* the style for infomations/images of the page */
 .container{
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+/* the style for the image in aboutme page */
 .aboutme-img {
     display: flex;
     align-items: center;
@@ -79,7 +82,7 @@ h2{
 
 /* for mobile screen (aboutme page) */
 @media (max-width: 600px) {
-
+    /* for the style of whole page of the website */
     .page{
         background: #192841;
         min-height: 100vh;
@@ -87,7 +90,7 @@ h2{
         color: white;
         position: relative;
     }
-    
+    /* the style for navigation bar */
     nav{
         display: flex;
         align-items: center;
@@ -122,6 +125,7 @@ h2{
         color: black;
     }
     
+    /* the style for information/images in this (about me) page */
     .container{
         display: flex;
         flex-wrap: wrap;
@@ -156,10 +160,6 @@ h2{
     h2{
         color:lightskyblue;
     }
-    
-    /* body{
-        min-height: 100vh;
-    } */
     
 
 }
