@@ -16,7 +16,7 @@
 nav{
     display: flex;
     align-items: center;
-    padding: 20px 8%;
+    padding: 10px 8%;
     position: fixed;
     top: 0;
     width: 100%;
@@ -32,11 +32,14 @@ nav ul li{
     display: inline-block;
     list-style: none;
     margin: 0 20px;
+    font-size: 15px;
 }
 
-nav ul li a{
+nav ul li a.hover
+nav ul li a.active{
     text-decoration: none;
     color: black;
+    background: #fff;
 }
 
 h1{
@@ -53,7 +56,9 @@ h1{
 .aboutme-img {
     display: flex;
     align-items: center;
-    padding: 20px 8%;
+    padding: 15px 10%;
+    padding-top: 30px;
+    padding-bottom: 20px;
     object-fit: cover;
     max-width: 100%;
     margin-left: -40px;
@@ -72,3 +77,89 @@ h2{
     color:lightskyblue;
 }
 
+/* for mobile screen (aboutme page) */
+@media (max-width: 600px) {
+
+    .page{
+        background: #192841;
+        min-height: 100vh;
+        width: 100%;
+        color: white;
+        position: relative;
+    }
+    
+    nav{
+        display: flex;
+        align-items: center;
+        padding: 10px 8%;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #4d88e2;
+    }
+    
+    nav ul{
+        flex: 1;
+        text-align: right;
+    }
+    
+    nav ul li{
+        display: inline-block;
+        list-style: none;
+        margin: 0 20px;
+        font-size: 15px;
+    }
+    
+    nav ul li a.hover
+    nav ul li a.active{
+        text-decoration: none;
+        color: black;
+        background: #fff;
+    }
+    
+    h1{
+        font-size: 35px;
+        color: black;
+    }
+    
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .aboutme-img {
+        display: flex;
+        align-items: center;
+        width: 400px;
+        height: 400px;
+        padding: 15px 10%;
+        object-fit: cover;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 60px;
+    }
+    
+    .image{
+        flex-basis: 100%;
+    }
+    
+    .infotext{
+        font-size: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 20px;
+    } 
+    
+    h2{
+        color:lightskyblue;
+    }
+    
+    /* body{
+        min-height: 100vh;
+    } */
+    
+
+}
