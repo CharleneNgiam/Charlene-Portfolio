@@ -16,7 +16,7 @@
 nav{
     display: flex;
     align-items: center;
-    padding: 20px 8%;
+    padding: 10px 8%;
     position: fixed;
     top: 0;
     width: 100%;
@@ -32,15 +32,162 @@ nav ul li{
     display: inline-block;
     list-style: none;
     margin: 0 20px;
+    font-size: 15px;
 }
 
-nav ul li a{
+/* nav ul li a.hover
+nav ul li a.active{ */
+nav ul li a.hover{
     text-decoration: none;
     color: black;
+    background: #fff;
 }
+
 
 h1{
     font-size: 35px;
     color: black;
 }
 
+h2{
+    font-size: 35px;
+}
+
+.form{
+    width: 700px;
+    color: black;
+    background-color: lightblue;
+    border: 1px solid lightgray;
+    padding: 10px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="phone"] {
+    display:block;
+    margin-bottom: 10px;
+    height: 40px;
+    width: 300px;
+}
+
+.submit{
+    display:block;
+    margin-bottom:10px;
+    height: 40px;
+    width: 150px;
+    border-radius: 10px;
+}
+
+textarea {
+    display:block;
+    margin-bottom: 10px;
+    height: 70px;
+    width: 350px;
+}
+
+
+input{
+    padding: 7px;
+}
+label {
+    display:block;
+    margin-top: 21px;
+    margin-bottom: 7px;
+}
+
+/* for mobile screen (contactme page) */
+@media (max-width: 600px) {
+    .page{
+        background: #192841;
+        min-height: 130vh;
+        width: 100%;
+        color: white;
+        position: relative;
+    }
+    
+    nav{
+        display: flex;
+        align-items: center;
+        padding: 10px 8%;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #4d88e2;
+    }
+    
+    nav ul{
+        flex: 1;
+        text-align: right;
+    }
+    
+    nav ul li{
+        display: inline-block;
+        list-style: none;
+        margin: 0 20px;
+        font-size: 15px;
+    }
+    
+    nav ul li a.hover
+    nav ul li a.active{
+        text-decoration: none;
+        color: black;
+        background: #fff;
+    }
+    
+    h1{
+        font-size: 35px;
+        color: black;
+    }
+    
+    h2{
+        font-size: 35px;
+    }
+
+    .form{
+        width: 300px;
+        color: black;
+        background-color: lightblue;
+        border: 1px solid lightgray;
+        padding: 10px;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    input[type="phone"] {
+        display:block;
+        margin-bottom: 10px;
+        height: 40px;
+        width: 200px;
+    }
+    
+    .submit{
+        display:block;
+        margin-bottom:10px;
+        height: 40px;
+        width: 100px;
+        border-radius: 10px;
+    }
+    
+    textarea {
+        display:block;
+        margin-bottom: 10px;
+        height: 70px;
+        width: 250px;
+    }
+    
+    
+    input{
+        padding: 7px;
+    }
+    label {
+        display:block;
+        margin-top: 21px;
+        margin-bottom: 7px;
+    }
+}
